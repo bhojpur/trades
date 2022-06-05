@@ -61,8 +61,8 @@ var rootCmdOpts struct {
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "trades",
-	Short: "Bhojpur Trades is an electronic trading engine powered by Kubernetes",
+	Use:   "tradectl",
+	Short: "Bhojpur TradeControl is an electronic trading engine",
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		if verbose {
 			log.SetLevel(log.DebugLevel)
